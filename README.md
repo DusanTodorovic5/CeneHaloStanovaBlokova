@@ -1,5 +1,5 @@
 # CeneHaloStanovaBlokova
-Python skripta za scrappovanje stanova koji se prodaju na novom beogradu
+Python skripta za scrappovanje stanova koji se prodaju na Novom Beogradu
 
 # Kako koristiti
 
@@ -46,7 +46,12 @@ PROSECNA CENA STANA :
 
 # Preporuka
 
-Ja koristim sledecu komandu u bash-u
+Ja koristim sledeću komandu u bash-u
 ```console
-broj_bloka={broj_bloka_koji_vas_interesuje};python main.py $broj_bloka > "$broj_bloka" ; nano "$broj_bloka"
+broj_bloka={broj_bloka_koji_vas_interesuje};python main.py $broj_bloka > "$broj_bloka" ; cat "$broj_bloka"
 ```
+{broj_bloka_koji_vas_interesuje} zamenite sa nekim brojem, na primer za blok 45 komanda izgleda :
+```console
+broj_bloka=45;python main.py $broj_bloka > "$broj_bloka" ; cat "$broj_bloka"
+```
+Izlaz ovakve komande je otvoren fajl po imenu bloka, u slučaju bloka 45 je fajl po imenu 45 bez ekstenzije i nalazi se u folderu gde ste i pokrenuli komandu
