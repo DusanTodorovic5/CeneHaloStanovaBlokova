@@ -48,5 +48,5 @@ PROSECNA CENA STANA :
 
 Ja koristim sledecu komandu u bash-u
 ```console
-python main.py {broj_bloka} > broj_bloka ; nano broj_bloka
+broj_bloka={broj_bloka_koji_vas_interesuje};python main.py $broj_bloka > "$broj_bloka" ; nano "$broj_bloka"
 ```
